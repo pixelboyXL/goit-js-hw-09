@@ -12,6 +12,7 @@ const stopBtn = document.querySelector("[data-stop]");
 startBtn.addEventListener("click", onChangeColorStart);
 stopBtn.addEventListener("click", onChangeColorStop);
 
+let intervalId = null;
 function onChangeColorStart() {
     stopBtn.removeAttribute("disabled");
     startBtn.setAttribute("disabled", "disabled");

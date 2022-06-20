@@ -41,4 +41,5 @@ function onSubmitForm(event) {
       });
       delayTime += Number(step.value);
   };
+  form.reset();
 };
